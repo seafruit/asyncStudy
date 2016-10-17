@@ -9,8 +9,7 @@ git clone URL
 进入目录
 ```
 cd studyAsync
-npm init -y
-npm install async
+npm install
 ```
 **seires demo**
 ```
