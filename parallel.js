@@ -1,6 +1,6 @@
 var async = require('async');
 
-console.log("\n------------------task => array---------------------\n");
+console.log("\n------------------tasks => array---------------------\n");
 
 async.parallel([
         function(callback){
@@ -14,7 +14,7 @@ async.parallel([
         console.log(results);
     });
 
-console.log("\n------------------task => object---------------------\n");
+console.log("\n------------------tasks => object---------------------\n");
 
 async.parallel({
         one:function(callback){

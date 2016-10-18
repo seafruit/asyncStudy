@@ -1,6 +1,6 @@
 var async = require('async');
 
-console.log("\n---------------------task => array----------------------\n");
+console.log("\n---------------------tasks => array----------------------\n");
 
 async.waterfall([
     function(callback){
@@ -20,7 +20,7 @@ async.waterfall([
     console.log('result => ' + result);
 });
 
-console.log("\n--------------------task => object----------------------\n");
+console.log("\n--------------------tasks => object----------------------\n");
 
 async.waterfall({
     one:function(callback){
@@ -40,7 +40,7 @@ async.waterfall({
     console.log('result => ' + result);
 });
 
-console.log("\n--------------------task => 第一个出错----------------------\n");
+console.log("\n--------------------tasks => 第一个出错----------------------\n");
 
 async.waterfall([
     function(callback){
@@ -60,7 +60,7 @@ async.waterfall([
     console.log('result => ' + result);
 });
 
-console.log("\n--------------------task => 桉顺序执行----------------------\n");
+console.log("\n--------------------tasks => 桉顺序执行----------------------\n");
 
 async.waterfall([
     function(callback){
