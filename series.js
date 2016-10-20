@@ -45,12 +45,12 @@ console.log("\n-----------------tasks => 按顺序执行----------------------\n
 
 async.series({
     one: function(callback){
-        callback(null, 1);
         console.log('这是第一个');
+        callback(null, 1);
     },
     two: function(callback){
-        callback(null, 2);
         console.log('这是第二个');
+        callback(null, 2);
     }
 },function(err, results) {
     console.log(results);

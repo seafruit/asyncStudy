@@ -40,7 +40,7 @@ async.waterfall({
     console.log('result => ' + result);
 });
 
-console.log("\n--------------------tasks => 第一个出错----------------------\n");
+console.log("\n--------------------tasks => 第二个出错----------------------\n");
 
 async.waterfall([
     function(callback){
@@ -65,18 +65,15 @@ console.log("\n--------------------tasks => 桉顺序执行---------------------
 async.waterfall([
     function(callback){
         callback(null, 'one', 'two');
-        console.log('这是第一个');
     },
     function(arg1, arg2, callback){
         console.log('arg1 => ' + arg1);
         console.log('arg2 => ' + arg2);
         callback(null, 'three');
-        console.log('这是第二个');
     },
     function(arg3, callback){
         console.log('arg3 => ' + arg3);
         callback(null, 'done');
-        console.log('这是第三个');
     }
 ], function (err, result) {
     console.log('err => ' + err);
